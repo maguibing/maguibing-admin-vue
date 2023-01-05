@@ -45,7 +45,7 @@ const doms = [
     redirect: '/user',
     meta: {
       title: '系统管理',
-      icon: 'dashboard'
+      icon: 'hardware'
     },
     children: [
       {
@@ -105,21 +105,21 @@ const doms = [
     redirect: '/base',
     meta: {
       title: '数据表单',
-      icon: 'tab'
+      icon: 'category'
     },
     children: [
-      {
-        path: 'base',
-        component: () => import('@/views/form/form-base'),
-        name: 'Base',
-        meta: { title: '基础表单', icon: 'tab' }
-      },
-      {
-        path: 'custom',
-        component: () => import('@/views/form/form-base-custom'),
-        name: 'Custom',
-        meta: { title: '标签自定义', icon: 'tab' }
-      },
+    //   {
+    //     path: 'base',
+    //     component: () => import('@/views/form/form-base'),
+    //     name: 'Base',
+    //     meta: { title: '基础表单', icon: 'tab' }
+    //   },
+    //   {
+    //     path: 'custom',
+    //     component: () => import('@/views/form/form-base-custom'),
+    //     name: 'Custom',
+    //     meta: { title: '标签自定义', icon: 'tab' }
+    //   },
       {
         path: 'steps',
         component: () => import('@/views/form/form-steps'),
@@ -159,94 +159,12 @@ const doms = [
     ]
   },
   {
-    path: '/container',
-    component: Layout,
-    redirect: '/base',
-    meta: {
-      title: '布局容器',
-      icon: 'tab'
-    },
-    children: [
-      {
-        path: 'full',
-        component: () => import('@/views/container/base'),
-        name: 'Full',
-        meta: { title: '基础容器', icon: 'tab' }
-      },
-      {
-        path: 'round',
-        component: () => import('@/views/container/round'),
-        name: 'Round',
-        meta: { title: '四边布局', icon: 'tab' }
-      },
-      {
-        path: 'round-1',
-        component: () => import('@/views/container/round-1'),
-        name: 'Round1',
-        meta: { title: '四边布局一', icon: 'tab' }
-      },
-      {
-        path: 'nesting',
-        component: () => import('@/views/container/nesting'),
-        name: 'Nesting',
-        meta: { title: '嵌套布局', icon: 'tab' }
-      },
-      {
-        path: 'control',
-        component: () => import('@/views/container/control'),
-        name: 'Control',
-        meta: { title: '控制按钮', icon: 'tab' }
-      },
-      {
-        path: 'split-pane',
-        component: () => import('@/views/container/split-pane'),
-        name: 'SplitPane',
-        meta: { title: '划分区域', icon: 'tab' }
-      },
-      {
-        path: '/waterfall',
-        component: () => import('@/views/aline-commponent/img-preview/waterfall'),
-        name: 'WaterFall',
-        meta: { title: '瀑布流', icon: 'pic' }
-      }
-    ]
-  },
-  {
-    path: '/grid-layout',
-    component: Layout,
-    redirect: '/index',
-    meta: {
-      title: '网格布局',
-      icon: 'tab'
-    },
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/grid-layout/index'),
-        name: 'Index',
-        meta: { title: '网格布局', icon: 'tab' }
-      },
-      {
-        path: 'drag',
-        component: () => import('@/views/grid-layout/drag'),
-        name: 'Drag',
-        meta: { title: '布局拖动', icon: 'tab' }
-      },
-      {
-        path: 'resize',
-        component: () => import('@/views/grid-layout/resize'),
-        name: 'Resize',
-        meta: { title: '改变大小', icon: 'tab' }
-      }
-    ]
-  },
-  {
     path: '/icon',
     component: Layout,
     redirect: '/index',
     meta: {
       title: '图标库',
-      icon: 'icon'
+      icon: 'favorites-fill'
     },
     children: [
       {
@@ -261,12 +179,12 @@ const doms = [
         name: 'Icons',
         meta: { title: '阿里云图标', icon: 'icon' }
       },
-      {
-        path: 'iconfont-colour',
-        component: () => import('@/views/icons/iconfont-colour'),
-        name: 'Icons',
-        meta: { title: '彩色图标', icon: 'icon' }
-      }
+    //   {
+    //     path: 'iconfont-colour',
+    //     component: () => import('@/views/icons/iconfont-colour'),
+    //     name: 'Icons',
+    //     meta: { title: '彩色图标', icon: 'icon' }
+    //   }
     ]
   },
   ...AlineComponent,
@@ -305,27 +223,27 @@ const doms = [
     redirect: '/success',
     meta: {
       title: '反馈页面',
-      icon: 'search'
+      icon: 'annotation'
     },
     children: [
-      {
-        path: 'success',
-        component: () => import('@/views/result/success'),
-        name: 'Success',
-        meta: { title: '成功页面', icon: 'tab' }
-      },
-      {
-        path: 'warning',
-        component: () => import('@/views/result/warning'),
-        name: 'Warning',
-        meta: { title: '警告页面', icon: 'tab' }
-      },
-      {
-        path: 'error',
-        component: () => import('@/views/result/error'),
-        name: 'Error',
-        meta: { title: '错误页面', icon: 'tab' }
-      },
+    //   {
+    //     path: 'success',
+    //     component: () => import('@/views/result/success'),
+    //     name: 'Success',
+    //     meta: { title: '成功页面', icon: 'tab' }
+    //   },
+    //   {
+    //     path: 'warning',
+    //     component: () => import('@/views/result/warning'),
+    //     name: 'Warning',
+    //     meta: { title: '警告页面', icon: 'tab' }
+    //   },
+    //   {
+    //     path: 'error',
+    //     component: () => import('@/views/result/error'),
+    //     name: 'Error',
+    //     meta: { title: '错误页面', icon: 'tab' }
+    //   },
       {
         path: '403',
         component: () => import('@/views/result/403'),

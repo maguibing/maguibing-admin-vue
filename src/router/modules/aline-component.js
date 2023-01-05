@@ -1,11 +1,3 @@
-/*
- * @Description: 文件及简介
- * @Author: Cary
- * @Date: 2019-12-12 10:07:18
- * @FilePath: \alien-docsf:\vue-project\alien-vue-admin\src\router\modules\aline-component.js
- */
-
-/* Layout */
 import Layout from '@/layout'
 
 const doms = [
@@ -16,7 +8,7 @@ const doms = [
     alwaysShow: true,
     meta: {
       title: '超强组件',
-      icon: 'pic'
+      icon: 'all'
     },
     children: [
       {
